@@ -12,7 +12,7 @@ import './style.css';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { UnrealBloomPass } from 'three/examples/jsm/postprocessing/UnrealBloomPass';
 
-init();
+init(); 
 
 let gui = new GUI();
 

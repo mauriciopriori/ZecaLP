@@ -1,19 +1,8 @@
-import dynamic from 'next/dynamic';
-
-const DynamicComponentWithDatGUI = dynamic(
- () => import("../displex-starter/src/app"),
- {
-    ssr: false,
- }
-);
-
 const Index = () => {
  return (
     <>
-      <div>
-        <h1>Hello world!</h1>
-        <DynamicComponentWithDatGUI />
-      </div>
+      <div className='w-screen h-screen' id='container'><canvas id="canvas"></canvas></div>
+      <script src="./script.js"></script>
     </>
  );
 };
