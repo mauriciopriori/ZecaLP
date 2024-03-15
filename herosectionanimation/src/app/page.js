@@ -1,13 +1,21 @@
-// page.jsx
-import Sketch from '@/boilerplate/js/Uvmap';
-import styles from './page.module.css'
-//import Cube from '@/components/cube';
-import { Canvas, useFrame } from '@react-three/fiber'; 
+import dynamic from 'next/dynamic';
 
-export default function Home() {
+const DynamicComponentWithDatGUI = dynamic(
+ () => import("../displex-starter/src/app"),
+ {
+    ssr: false,
+ }
+);
+
+const Index = () => {
  return (
-    <main className="h-screen w-screen">
-      <Sketch/>
-    </main>
- )
-}
+    <>
+      <div>
+        <h1>Hello world!</h1>
+        <DynamicComponentWithDatGUI />
+      </div>
+    </>
+ );
+};
+
+export default Index;
