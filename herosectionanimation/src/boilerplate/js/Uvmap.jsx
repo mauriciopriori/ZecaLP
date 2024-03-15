@@ -8,7 +8,6 @@ import { extend } from "@react-three/fiber";
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 extend({ OrbitControls });
-import Particle from './particle';
 
 const Sketch = () => {
  const [isPlaying, setIsPlaying] = useState(true);
@@ -27,7 +26,7 @@ const Sketch = () => {
     rendererRef.current = new THREE.WebGLRenderer();
     rendererRef.current.setPixelRatio(window.devicePixelRatio);
     rendererRef.current.setSize(containerRef.current.offsetWidth, containerRef.current.offsetHeight);
-    rendererRef.current.setClearColor(0xeeeeee, 1);
+    rendererRef.current.setClearColor(0x000000, 1);
     rendererRef.current.gammaFactor = 2.2; 
     containerRef.current.appendChild(rendererRef.current.domElement);
 
