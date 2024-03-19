@@ -1,3 +1,5 @@
+"use client";
+
 import * as THREE from "three";
 import { SmoothOrbitControls } from "./SmoothOrbitControls";
 import { EffectComposer } from "three/examples/jsm/postprocessing/EffectComposer.js";
@@ -340,7 +342,7 @@ export const init = () => {
   camera = new THREE.PerspectiveCamera(75, width / height, 0.01, 100);
   camera.position.z = 2.5;
   // camera.position.x = 2.5;
-  camera.lookAt(0,0,0)
+  camera.lookAt(0, 0, 0);
   scene.add(camera);
   window.addEventListener("resize", () => {
     // Update

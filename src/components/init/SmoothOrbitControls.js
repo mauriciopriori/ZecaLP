@@ -1,5 +1,6 @@
 import * as THREE from "three";
-export const SmoothOrbitControls = () => {
+
+function SmoothOrbitControls() {
   function OrbitConstraint(object) {
     // smooth Zoom
     var zoomEnd = 0;
@@ -940,4 +941,6 @@ export const SmoothOrbitControls = () => {
       },
     },
   });
-};
+}
+
+export { SmoothOrbitControls };
