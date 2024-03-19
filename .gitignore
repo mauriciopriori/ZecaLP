@@ -1,0 +1,54 @@
+# build artifacts
+**/node_modules
+**/target
+**/build
+**/out
+**/dist
+**/next-env.d.ts
+.done
+.pnp.js
+alore-be.tgz
+
+# env
+.env
+.env.local
+
+# testing
+frontend/coverage
+**/cypress/videos
+**/cypress/screenshots
+**/cypress/downloads
+
+# nyc
+.nyc_output
+
+# next.js
+frontend/.next/
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# xstate
+*.typegen.*
+
+# pwa
+**/public/workbox-*.*
+**/public/sw.*
+**/public/worker-*.*
+
+# logs
+.data
