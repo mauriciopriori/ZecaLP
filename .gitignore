@@ -8,6 +8,7 @@
 .done
 .pnp.js
 alore-be.tgz
+.next
 
 # env
 .env
